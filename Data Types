@@ -1,0 +1,8 @@
+byte number = 2;
+int count = 10;
+float totalprice = 20.8f;
+char character = 'A';
+Console.WriteLine(number);
+Console.WriteLine(count);
+Console.WriteLine(totalprice);
+Console.WriteLine(character);
