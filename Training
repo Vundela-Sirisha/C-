@@ -1,5 +1,56 @@
+// Basics
 Console.WriteLine("This is my first line.");
 //Console.WriteLine("This is my second line");
 Console.Write("This is");
 Console.Write(" ");
 Console.Write("my second line.");
+
+// exception Handle
+
+            try
+            {
+                var n = "1234";
+                byte b = Convert.ToByte(n);
+                Console.WriteLine(b);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("The number could not be converted");
+            }
+
+// Arthmetic Operator
+
+var a = 10;
+var b = 20;
+Console.WriteLine(a+b);
+Console.WriteLine(b-a);
+Console.WriteLine(a*b);
+Console.WriteLine(a/b);
+Console.WriteLine(a%b);
+Console.WriteLine(float(a)/float(b));
+
+
+// Comparison Operators
+var a = 9;
+var b = 10;
+
+Console.WriteLine(a < b);
+Console.WriteLine(b < a);
+Console.WriteLine(a > b);
+Console.WriteLine(b > a);
+Console.WriteLine(a >= b);
+Console.WriteLine(a <= b);
+Console.WriteLine(b == a);
+Console.WriteLine(a != b);
+
+// Logical Operators
+var a = 9;
+var b = 10;
+var c = 8;
+Console.WriteLine(a <= b && c >= b);
+Console.WriteLine(a <= c || c <= b);
+Console.WriteLine(!(a > b));
+
+
+
+
