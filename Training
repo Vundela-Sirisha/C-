@@ -51,6 +51,82 @@ Console.WriteLine(a <= b && c >= b);
 Console.WriteLine(a <= c || c <= b);
 Console.WriteLine(!(a > b));
 
+// decleration of class and object
+using System;
+namespace sharpFundamentals
+{
+    public class person
+    {
+        public string FirstName;
+        public string LastName;
+        public void Introduce()
+        {
+            Console.WriteLine("My Name is" +" "+FirstName + " " + LastName);
+        }
+    }
+    class program
+    {
+        static void Main(string[] args)
+        {
+            var john = new person();
+            john.FirstName = "John";
+            john.LastName = "Smith";
+            john.Introduce();
+        }
+
+    }
+}
+
+// calculator(moving a class to other program)
+using Hello_World.Math;
+using System;
+namespace sharpFundamentals
+{
+    public class person
+    {
+        public string FirstName;
+        public string LastName;
+        public void Introduce()
+        {
+            Console.WriteLine("My Name is" +" "+FirstName + " " + LastName);
+        }
+    }
+    class program
+    {
+        static void Main(string[] args)
+        {
+            var john = new person();
+            john.FirstName = "John";
+            john.LastName = "Smith";
+            john.Introduce();
+
+            Calculator calculator = new Calculator();
+            var result = calculator.Add(1, 2);
+            Console.WriteLine(result);
+
+        }
+
+    }
+}
+
+// Array
+using System;
+namespace array
+{
+    class program
+    {
+        static void Main(string[] args)
+        {
+            var num = new int[3];
+            num[0] = 1;
+            Console.WriteLine(num[0]);
+            Console.WriteLine(num[1]);
+            Console.WriteLine(num[2]);
+        }
+
+    }
+}
+
 
 
 
