@@ -1,0 +1,27 @@
+using System;
+namespace csharpFundamentals
+{
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int Hour= 10;
+            if(Hour>0 && Hour<12)
+            {
+                Console.WriteLine("It is morning");
+            }
+            else if(Hour>12 && Hour<18) {
+                Console.WriteLine("It is afternoon");
+            }
+            else{
+                Console.WriteLine("It is evening");
+            }
+
+
+
+        }
+
+    }
+}
+

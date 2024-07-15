@@ -1,0 +1,14 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        var name= "John Smith";
+        for(int i = 0; i < name.Length; i++)
+        {
+            Console.WriteLine(name[i]);
+        }
+        
+    }
+}
