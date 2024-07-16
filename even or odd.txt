@@ -1,0 +1,28 @@
+using System;
+namespace CSharpFundementals
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter a number:");
+            String input=Console.ReadLine();
+            if (int.TryParse(input, out int a))
+            {
+                if (a % 2 == 0)
+                {
+                    Console.WriteLine("The number is even");
+                }
+                else
+                {
+                    Console.WriteLine("The number is Odd");
+                }
+
+            }
+
+                
+           
+        }
+    }
+}
+

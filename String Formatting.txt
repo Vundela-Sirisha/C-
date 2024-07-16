@@ -1,0 +1,17 @@
+using System;
+
+class Program
+{
+    static void Main(String[]args)
+    {
+        var name = "John Smith ";
+        Console.WriteLine("Trim: '{0}'",name.Trim());
+        Console.WriteLine("ToUpper: '{0}'",name.Trim().ToUpper());
+        Console.WriteLine("ToLower:'{0}'",name.Trim().ToLower());
+        var index=name.IndexOf(' ');
+        var firstName=name.Substring(0,index);
+        var lastName=name.Substring(index+1);
+        Console.WriteLine(firstName);
+        Console.WriteLine(lastName);
+    }
+}
